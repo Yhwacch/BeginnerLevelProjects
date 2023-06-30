@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <!-- 
+                                NAVBAR
+     -->
+     <div class="navbar">
+        <div class="toogle">
+            <img src="img/toogleBar.png" width="50px" height="50px" alt="">
+        </div>
+        <div class="icon"> 
+            <img src="img/icon.jpg" alt="burgerIco" width="32px" height="32px"></div>
+        <div class="navLinks">
+            <a href="index.html">Anasayfa</a>
+            <a href="https://softito.com.tr" target="_blank">Eğitimler</a>
+            <a href="contact.html">İletişim</a>
+            <a href="about.html">Biz Kimiz?</a>
+            <img src="img/login.png" width="32px" height="32px" alt="" onclick="login()">
+            <div class="login">
+                
+                <input id="input1" type="text" placeholder="Kullanıcı Adınız...">
+                <input id="input2" type="text" placeholder="Şifreniz...">
+                <input id="input3"type="submit" value="Giriş Yap">
+            </div>
+        </div>
+    </div>
+    <!-- BANNER -->
+    <div class="banner" style="height: 600px;">
+        <img src="img/banner2.jpg" id="Dimg"alt="">
+    </div>
+    <div class="contact">
+        
+        <div class="contactLeft">
+            <h2>İletişim Bilgileri</h2>
+            <div class="contactItem"><img src="img/location.png" width="16px" height="16px" alt=""><p>Falanca Mahalle, Falanca Sokak - İstanbul / Beşiktaş</p></div>
+            <div class="contactItem"><img src="img/mail.png" width="16px" height="16px" alt=""><p>candenizozder08@gmail.com</p></div>
+            <div class="contactItem"><img src="img/phone.png" width="16px" height="16px" alt=""><p>+90 545 216 85 28</p></div>
+        </div>
+        <div class="contactright">
+            <div class="contactItem"><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12036.763809551465!2d29.00582699999999!3d41.04295310000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a02dde1ee7%3A0xc2a9388a2a080c63!2zQmXFn2lrdGHFnywgU2luYW5wYcWfYSwgQmXFn2lrdGHFny_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1679174478352!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+        </div>
+
+    </div>
+        <!-- FOOTER -->
+
+    <div class="footer" style="margin: 0px;">
+        <h3>Front-End Homework Project && Copyright bla bla... DENIZ CAN ÖZDER</h3>
+        <p><span id='date-time'></span>.</p>
+    </div>
+    <!-- LOGIN SCRIPT -->
+    <script>
+        function login(){
+        let x = document.getElementById("input1");
+        let y = document.getElementById("input2");
+        let p = document.getElementById("input3")
+        if (x.style.display === "block")
+            {
+            x.style.display = "none";
+            y.style.display = "none";
+            p.style.display = "none";
+            }
+        else
+            {
+            x.style.display ="block";
+            y.style.display ="block";
+            p.style.display ="block";
+            x.style.alignSelf ="flex-end";
+            }
+}
+    </script>
+     <!-- DATE TIME SCRIPT -->
+     <script>
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML=dt;
+        </script>
+</body>
+</html>

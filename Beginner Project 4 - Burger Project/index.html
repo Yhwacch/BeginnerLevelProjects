@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- 
+                                NAVBAR
+     -->
+    <div class="navbar">
+        <div class="toogle">
+            <img src="img/toogleBar.png" width="50px" height="50px" alt="">
+        </div>
+        <div class="icon"> 
+            <img src="img/icon.jpg" alt="burgerIco" width="32px" height="32px"></div>
+        <div class="navLinks">
+            <a href="#">Anasayfa</a>
+            <a href="https://softito.com.tr" target="_blank">Eğitimler</a>
+            <a href="contact.html">İletişim</a>
+            <a href="about.html">Biz Kimiz?</a>
+            <img src="img/login.png" width="32px" height="32px" alt="" onclick="login()">
+            <div class="login">
+                
+                <input id="input1" type="text" placeholder="Kullanıcı Adınız...">
+                <input id="input2" type="text" placeholder="Şifreniz...">
+                <input id="input3"type="submit" value="Giriş Yap">
+            </div>
+        </div>
+    </div>
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="img/banner.jpg" id="Dimg"alt="">
+    </div>
+    <div class="bannerRadio">
+        <!-- <input id="radio1" type="radio" width="50px" height="50px" onchange="bannerRadio()">
+        <input id="radio2" type="radio" width="50px" height="50px" onchange="">
+        <input id="radio3" type="radio" width="50px" height="50px" onchange="">
+        <input id="radio4" type="radio" width="50px" height="50px" onchange=""> -->
+        <input type="radio" id="radio1" name="myRadios" onchange="handleChange(this);" value="1" />
+        <input type="radio" name="myRadios" onchange="handleChange(this);" value="2" />
+        <input type="radio" name="myRadios" onchange="handleChange(this);" value="3" />
+        <input type="radio" name="myRadios" onchange="handleChange(this);" value="4" />
+    </div>
+<!-- 
+    MAIN CONNTETN
+ -->
+        <div class="main">
+            <div class="menu">
+                <img src="img/burger.jpg" alt="">
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cumque ullam dolorem excepturi aut rerum.</p>
+    
+            </div>
+            <div class="menu">
+                <img src="img/burger.jpg" alt="">
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cumque ullam dolorem excepturi aut rerum.</p>
+    
+            </div>
+            <div class="menu">
+                <img src="img/burger.jpg" alt="">
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cumque ullam dolorem excepturi aut rerum.</p>
+    
+            </div>
+            <div class="menu">
+                <img src="img/burger.jpg" alt="">
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, cumque ullam dolorem excepturi aut rerum.</p>
+    
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Front-End Homework Project && Copyright bla bla... DENIZ CAN ÖZDER</h3>
+            <p><span id='date-time'></span>.</p>
+        </div>
+        <!-- LOGIN SCRIPT -->
+        <script>
+            function login(){
+            let x = document.getElementById("input1");
+            let y = document.getElementById("input2");
+            let p = document.getElementById("input3")
+            if (x.style.display === "block")
+                {
+                x.style.display = "none";
+                y.style.display = "none";
+                p.style.display = "none";
+                }
+            else
+                {
+                x.style.display ="block";
+                y.style.display ="block";
+                p.style.display ="block";
+                x.style.alignSelf ="flex-end";
+                }
+    }
+        </script>
+        <!-- DATE TIME SCRIPT -->
+    <script>
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
+    </script>
+
+
+    <!-- UNCOMPLETED SCRIPT (BANNER RADIOS FOR GALLERY) -->
+    <script>
+        // bannerRadio Script
+        
+    //     function bannerRadio(){
+    //         let radio1 = document.getElementById("radio1");
+    //         let radio2 = document.getElementById("img2");
+    //         let radio3 = document.getElementById("Dimg");
+    //         let radio4 = document.getElementById("radio4");
+            
+    //         if(radio1.value == 1)
+    //         {
+    //             radio2.style.display="block";
+    //             radio3.styled.display="none";
+    //         }
+        
+
+    // }
+    </script>
+</body>
+</html>

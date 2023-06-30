@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #38151d;
+}
+
+/*  NAVBAR + RESPONSIVE SECTION  */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 112, 112);
+    align-items: center;
+    padding: 15px;
+}
+.icon{
+    align-self: center;
+}
+.navLinks a{
+    
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+}
+.login{
+    display: flex;
+    justify-content: end;
+    margin: 10px 0px;
+}
+.login input{
+    padding: 10px;
+}
+.navLinks input{
+    display: none;
+}
+.navLinks a:hover{
+    background-color: rgb(218, 90, 96);
+
+}
+.toogle{
+    display: none;
+}
+
+/* UNCOMPLETED RESPONSIVE */
+
+/* @media screen and (max-width:600px)
+{
+    .toogle{
+        display: flex;
+    }    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .icon{
+        display: none;
+    }
+    .navLinks{
+        display: flex;
+        flex-direction: column;
+    }
+    .navLinks a{
+        display: none;
+    }
+} */
+
+/* CSS for BANNER */
+.bannerImgs{
+    display: none;
+}
+.banner{
+    display: flex;
+}
+.banner img{
+    width: 100%;
+}
+.bannerRadio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background: #820622;
+}
+
+/* CSS For Main Content */
+
+.main{
+    display: flex;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    background-color: azure;
+    width: 25%;
+    margin-top: 10px;
+    justify-content: 75%;
+}
+.menu h3{
+    text-align: center;
+}
+.menu p{
+    padding: 5px;
+    text-align: center;
+}
+.menu img{
+    margin: 5px 5px;
+    border-radius: 70px;
+    width: 75%;
+    align-self: center;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: azure;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+.footer p{
+    text-align: right;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(250, 242, 242);
+    margin-top: 10px;
+    height: 350px;
+}
+.contact h2{
+    text-align: center;
+}
+.contactLeft, .contactright{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.contactItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.contactItem p{
+    margin:5px;
+}
+.contactright p{
+    width: 100%;
+}

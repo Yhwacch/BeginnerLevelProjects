@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Level Procejt 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 50px;
+        }
+        .header{
+            text-align: center;
+            padding: 60px;
+            background-color: rgb(40, 155, 116);
+            color: white;
+        }
+        .navbar{
+            display: flex; /* Parent etiketimize display flex yapıyoruz*/
+            background-color: #333;
+            
+        }
+        .navbar a{
+            text-decoration: none;
+            padding: 14px 20px;
+            color: white;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: black;
+        }
+        .row{
+            display: flex;
+        }
+        .left{
+            flex: 30%;
+            flex-wrap: wrap;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .right{
+            flex: 70%;
+            padding: 20px;
+        }
+        .img{
+            text-align: center;
+            background-color: #c9c7c7;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+        }
+        .img > p{
+            text-align: left;
+        }
+        .footer{
+            display: flex;
+            background-color: #f1f1f1;
+            padding: 20px;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        @media screen and (max-width: 1000px)
+        {
+            .row, .navbar{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: yellow; padding: 5px;">
+        <h3 style="text-align: center;">Resize the browser window to see the responsive effect.</h4>
+    </div>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout</p>
+    </div>
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <!-- MAIN CONTENT -->
+    <div class="row">
+        <!-- LEFT SIDE BAR -->
+        <div class="left">
+            <h2>About Me</h2>
+            <h5>Photo of Me</h5>
+            <div class="img">
+                <p style="width: 100%;">Image</p>
+                <img  style="height: 100%;" src="img/img9.jpg" alt="doggo">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="img" style="height: 60px;"><p style="width: 100%;">Image</p></div>
+            <div class="img" style="height: 60px;"><p style="width: 100%;">Image</p></div>
+            <div class="img" style="height: 60px;"><p style="width: 100%;">Image</p></div>
+        </div>
+        <!-- RIGHT SIDE BAR -->
+        <div class="right">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, March 18. 2023</h5>
+            <div class="img">
+                <p style="width: 100%;">Image</p>
+                <img  style="height: 100%;" src="img/img9.jpg" alt="doggo">
+                <img  style="height: 100%;" src="img/img4.jpg" alt="">
+                <img  style="height: 100%;" src="img/img2.jpg" alt="">
+                <img  style="height: 100%;" src="img/img12.jpg" alt="">
+            </div>
+            <p>Some text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non impedit id amet, nihil distinctio, laborum dolorum assumenda odit commodi dignissimos nulla facere atque quasi enim.</p>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, March 18. 2023</h5>
+            <div class="img">
+                <p style="width: 100%;">Image</p>
+                <img  style="height: 100%;" src="img/img9.jpg" alt="doggo">
+                <img  style="height: 100%;" src="img/img4.jpg" alt="">
+                <img  style="height: 100%;" src="img/img2.jpg" alt="">
+                <img  style="height: 100%;" src="img/img12.jpg" alt="">
+            </div>
+            <p>Some text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non impedit id amet, nihil distinctio, laborum dolorum assumenda odit commodi dignissimos nulla facere atque quasi enim.</p>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>

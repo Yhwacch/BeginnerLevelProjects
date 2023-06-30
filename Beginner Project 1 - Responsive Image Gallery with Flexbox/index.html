@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: rgb(230, 229, 229);
+        }
+        .header{
+            text-align: center;
+            background-color: beige;
+            padding:10px;
+            margin-bottom: 10px;
+        }
+        /* KAPSAYICI DIV */
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+        .colomn{
+            flex:25%;
+            flex-wrap: wrap;
+            max-width: 25%;
+            padding: 0 5px;
+        }
+        .colomn > img{
+            margin-top: 10px;
+            vertical-align: middle;
+            /* Bulundukları div'i kaplamaları için */
+            width: 100%;
+        }
+        @media(max-width: 1600px)
+        {
+            .colomn{
+                flex: 33%;
+                max-width: 100%;
+            }
+        }
+        @media(max-width: 1200px)
+        {
+            .colomn{
+                flex: 50%;
+                max-width: 100%;
+            }
+        }
+        @media(max-width: 800px)
+        {
+            .colomn{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Image Gallery With Flexbox</h1>
+        <p>Let's see the power of Flexbox....</p>
+    </div>
+    <div class="row">
+        <div class="colomn">
+            <img src="img/img1.jpg" />
+            <img src="img/img2.jpg" />
+            <img src="img/img3.jpg" />
+            <img src="img/img4.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="img/img5.jpg" />
+            <img src="img/img6.jpg" />
+            <img src="img/img7.jpg" />
+            <img src="img/img8.jpg" />
+        </div>
+        <div class="colomn"> 
+            <img src="img/img9.jpg" />
+            <img src="img/img10.jpg" />
+            <img src="img/img11.jpg" />
+            <img src="img/img12.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="img/img13.jpg" />
+            <img src="img/img14.jpg" />
+            <img src="img/img15.jpg" />
+
+        </div>
+    </div>    
+</body>
+</html>
